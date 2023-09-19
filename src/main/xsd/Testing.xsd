@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="/com/hexaware/jaxb/gen"
+    xmlns:userns="/com/hexaware/jaxb/gen"
+    elementFormDefault="qualified">
+
+    <!-- <element name="userRequest" type="userns:UserRequest"></element>
+    <element name="userResponse" type="userns:UserResponse"></element>
+
+    <complexType name="UserRequest">
+        <sequence>
+            <element name="id" type="int" />
+            <element name="name" type="string" />
+        </sequence>
+    </complexType>
+
+    <complexType name="UserResponse">
+        <sequence>
+            <element name="id" type="int" />
+            <element name="name" type="string" />
+            <element name="gender" type="string" />
+            <element name="created" type="dateTime" />
+        </sequence>
+    </complexType> -->
+    
+    
+    <element name="empRequest" type="userns:empRequest"></element>
+
+	<element name="empResponse" type="userns:empResponse"></element>
+
+	<complexType name="empRequest">
+		<sequence>
+			<element name="id" type="int"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="empResponse">
+		<sequence>
+			<element name="id" type="int"></element>
+			<element name="role" type="string"></element>
+			<element name="fullName" type="string"></element>
+		</sequence>
+	</complexType>
+    
+</schema>
